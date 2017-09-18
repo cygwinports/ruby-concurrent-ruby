@@ -1,0 +1,16 @@
+inherit rubygem
+
+NAME="ruby-concurrent-ruby"
+VERSION=1.0.5
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby concurrency tools library"
+DESCRIPTION="Modern concurrency tools including agents, futures, promises,
+thread pools, actors, supervisors, and more. Inspired by Erlang, Clojure,
+Go, JavaScript, actors, and classic concurrency patterns."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_concurrent_ruby_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_concurrent_ruby_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
